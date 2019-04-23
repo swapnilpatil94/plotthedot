@@ -1,0 +1,57 @@
+    body {
+            margin: 0;
+        }
+
+        .container div {
+            height: 10px;
+            Width: 10px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            margin: 10px;
+            background-color: rgba(110, 233, 176, 0.281);
+            cursor: pointer;
+            position: relative;
+        }
+        .container div:hover{
+            background-color: green;
+        }
+        .container div:nth-last-child(2){
+            width: 30px;
+            margin: 0;
+            border-radius: 0%;
+            border-bottom: 1px solid black;
+            background-color: white;
+            cursor: auto;
+        }
+        .container div:nth-last-child(2)::after {
+            content: "";
+            position: absolute;
+            height: 15px;
+            width: 1px;
+            background-color: black;
+            top: 25%;
+            z-index: 100;
+        }
+        .container div:last-child{
+            border-radius: 0%;
+            cursor: auto;
+            background-color: white;
+            z-index: 0;
+            position: relative;
+            top: -10px;
+        }
+        .container {
+            float: left;
+        }
+
+        .name{
+            margin: 30% 0 0 43%;
+        }
+        #main{
+            margin: 10% 0% 0% 35%;
+        }
+        .buttons{
+            margin-left: 40%;
+            padding: 20px;
+        }
